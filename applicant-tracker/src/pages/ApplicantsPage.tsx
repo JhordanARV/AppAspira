@@ -51,11 +51,11 @@ const ApplicantsPage: React.FC = () => {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Applicant List</h2>
         <Link
           to="/add-applicant"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-150 ease-in-out w-full sm:w-auto mt-3 sm:mt-0"
         >
           Add New Applicant
         </Link>
