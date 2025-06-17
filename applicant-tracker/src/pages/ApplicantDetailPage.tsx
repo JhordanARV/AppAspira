@@ -1,9 +1,9 @@
 // src/pages/ApplicantDetailPage.tsx
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getApplicantById } from '../../services/applicantService';
-import { Applicant, PersonalInformation, Education, WorkExperience, PsychologicalAssessment } from '../../types/applicant';
-import DetailSection from '../../components/Details/DetailSection'; // <-- IMPORT ADDED HERE
+import { getApplicantById } from '../services/applicantService';
+import { Applicant, PersonalInformation, Education, WorkExperience, PsychologicalAssessment } from '../types/applicant';
+import DetailSection from '../components/Details/DetailSection';
 
 // DetailSection component is now imported, so its definition is removed from here.
 

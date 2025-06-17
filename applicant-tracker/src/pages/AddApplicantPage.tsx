@@ -1,10 +1,10 @@
 // src/pages/AddApplicantPage.tsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { addApplicant } from '../../services/applicantService'; // Path updated
-import { PersonalInformation, Education, WorkExperience, PsychologicalAssessment, Applicant } from '../../types/applicant'; // Path updated
-import EducationHistorySection from '../../components/ApplicantForm/EducationHistorySection'; // Path updated
-import WorkExperienceSection from '../../components/ApplicantForm/WorkExperienceSection'; // Path updated
+import { addApplicant } from '../services/applicantService'; // Path updated
+import { PersonalInformation, Education, WorkExperience, PsychologicalAssessment, Applicant } from '../types/applicant'; // Path updated
+import EducationHistorySection from '../components/ApplicantForm/EducationHistorySection'; // Path updated
+import WorkExperienceSection from '../components/ApplicantForm/WorkExperienceSection'; // Path updated
 
 interface ApplicantFormData {
   firstName: string;

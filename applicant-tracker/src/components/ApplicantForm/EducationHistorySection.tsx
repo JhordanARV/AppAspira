@@ -28,24 +28,24 @@ const EducationHistorySection: React.FC<EducationHistorySectionProps> = ({
         <div key={index} className="space-y-4 border p-4 rounded-md mb-4 relative bg-gray-50/50 shadow-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
             <div className="sm:col-span-2">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Degree*</label>
-              <input type="text" name="degree" id={} value={edu.degree} onChange={(e) => onEducationChange(index, e)} required className={inputClass} />
+              <label htmlFor={"degree"} className="block text-sm font-medium text-gray-700">Degree*</label>
+              <input type="text" name="degree" id={"degree"} value={edu.degree} onChange={(e) => onEducationChange(index, e)} required className={inputClass} />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Institution*</label>
-              <input type="text" name="institution" id={} value={edu.institution} onChange={(e) => onEducationChange(index, e)} required className={inputClass} />
+              <label htmlFor={"institution"} className="block text-sm font-medium text-gray-700">Institution*</label>
+              <input type="text" name="institution" id={"institution"} value={edu.institution} onChange={(e) => onEducationChange(index, e)} required className={inputClass} />
             </div>
             <div>
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Field of Study</label>
-              <input type="text" name="fieldOfStudy" id={} value={edu.fieldOfStudy || ''} onChange={(e) => onEducationChange(index, e)} className={inputClass} />
+              <label htmlFor={"institution"} className="block text-sm font-medium text-gray-700">Field of Study</label>
+              <input type="text" name="fieldOfStudy" id={"fieldOfStudy"} value={edu.fieldOfStudy || ''} onChange={(e) => onEducationChange(index, e)} className={inputClass} />
             </div>
             <div>
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Graduation Year</label>
-              <input type="number" name="graduationYear" id={} value={edu.graduationYear === undefined ? '' : edu.graduationYear} onChange={(e) => onEducationChange(index, e)} className={inputClass} placeholder="YYYY" />
+              <label htmlFor={"graduationYear"} className="block text-sm font-medium text-gray-700">Graduation Year</label>
+              <input type="number" name="graduationYear" id={"graduationYear"} value={edu.graduationYear === undefined ? '' : edu.graduationYear} onChange={(e) => onEducationChange(index, e)} className={inputClass} placeholder="YYYY" />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">GPA</label>
-              <input type="number" step="0.01" name="gpa" id={} value={edu.gpa === undefined ? '' : edu.gpa} onChange={(e) => onEducationChange(index, e)} className={inputClass} placeholder="e.g., 3.5" />
+              <label htmlFor={"gpa"} className="block text-sm font-medium text-gray-700">GPA</label>
+              <input type="number" step="0.01" name="gpa" id={"gpa"} value={edu.gpa === undefined ? '' : edu.gpa} onChange={(e) => onEducationChange(index, e)} className={inputClass} placeholder="e.g., 3.5" />
             </div>
           </div>
           <div className="text-right mt-2"> {/* Added mt-2 for spacing */}

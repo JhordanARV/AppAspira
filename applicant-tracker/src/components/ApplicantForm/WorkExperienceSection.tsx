@@ -30,28 +30,28 @@ const WorkExperienceSection: React.FC<WorkExperienceSectionProps> = ({
         <div key={index} className="space-y-4 border p-4 rounded-md mb-4 relative bg-gray-50/50 shadow-sm">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
             <div className="sm:col-span-1">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Company*</label>
-              <input type="text" name="company" id={} value={work.company} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
+              <label htmlFor={"company"} className="block text-sm font-medium text-gray-700">Company*</label>
+              <input type="text" name="company" id={"company"} value={work.company} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
             </div>
             <div className="sm:col-span-1">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Role/Title*</label>
-              <input type="text" name="role" id={} value={work.role} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
+              <label htmlFor={"role"} className="block text-sm font-medium text-gray-700">Role/Title*</label>
+              <input type="text" name="role" id={"role"} value={work.role} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
             </div>
             <div>
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Start Date*</label>
-              <input type="date" name="startDate" id={} value={work.startDate} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
+              <label htmlFor={"startDate"} className="block text-sm font-medium text-gray-700">Start Date*</label>
+              <input type="date" name="startDate" id={"startDate"} value={work.startDate} onChange={(e) => onWorkExperienceChange(index, e)} required className={inputClass} />
             </div>
             <div>
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">End Date</label>
-              <input type="date" name="endDate" id={} value={work.endDate || ''} onChange={(e) => onWorkExperienceChange(index, e)} className={inputClass} />
+              <label htmlFor={"endDate"} className="block text-sm font-medium text-gray-700">End Date</label>
+              <input type="date" name="endDate" id={"endDate"} value={work.endDate || ''} onChange={(e) => onWorkExperienceChange(index, e)} className={inputClass} />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Responsibilities (one per line)</label>
-              <textarea name="responsibilities" id={} value={work.responsibilities.join('\n')} onChange={(e) => onWorkExperienceChange(index, e)} className={textAreaClass} rows={3}></textarea>
+              <label htmlFor={"responsibilities"} className="block text-sm font-medium text-gray-700">Responsibilities (one per line)</label>
+              <textarea name="responsibilities" id={"responsibilities"} value={work.responsibilities.join('\n')} onChange={(e) => onWorkExperienceChange(index, e)} className={textAreaClass} rows={3}></textarea>
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor={} className="block text-sm font-medium text-gray-700">Achievements (one per line)</label>
-              <textarea name="achievements" id={} value={work.achievements.join('\n')} onChange={(e) => onWorkExperienceChange(index, e)} className={textAreaClass} rows={3}></textarea>
+              <label htmlFor={"achievements"} className="block text-sm font-medium text-gray-700">Achievements (one per line)</label>
+              <textarea name="achievements" id={"achievements"} value={work.achievements.join('\n')} onChange={(e) => onWorkExperienceChange(index, e)} className={textAreaClass} rows={3}></textarea>
             </div>
           </div>
           <div className="text-right mt-2"> {/* Added mt-2 for spacing */}

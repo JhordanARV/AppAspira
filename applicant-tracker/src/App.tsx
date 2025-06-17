@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/applicants" element={<ApplicantsPage />} />
           <Route path="/add-applicant" element={<AddApplicantPage />} />
-          <Route path="/applicants/:applicantId" element={<ApplicantDetailPage />} /> // <-- Added route
+          <Route path="/applicants/:applicantId" element={<ApplicantDetailPage />} />
           {/* Define other routes here */}
         </Routes>
       </AppLayout>
